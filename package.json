@@ -1,24 +1,41 @@
 {
-  "name": "git-test",
-  "version": "1.0.0",
-  "description": "This is a test directory to learn Git and Node",
-  "main": "index.html",
+  "name": "confusion",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "bootstrap": "5.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-popper": "0.9.2",
+    "react-scripts": "4.0.3",
+    "reactstrap": "5.0.0",
+    "web-vitals": "^1.0.1"
+  },
   "scripts": {
-    "start":"npm run lite",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lite":"lite-server"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/jaasrl/git-test.git"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
   },
-  "author": "Jaasiel Rios",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/jaasrl/git-test/issues"
-  },
-  "homepage": "https://github.com/jaasrl/git-test#readme",
-  "devDependencies": {
-    "lite-server": "^2.6.1"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
